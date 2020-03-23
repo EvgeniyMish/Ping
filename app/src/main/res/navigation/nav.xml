@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.ping.view.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_biometricsApprovingFragment"
+            app:destination="@id/biometricsApprovingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/biometricsApprovingFragment"
+        android:name="com.example.ping.view.BiometricsApprovingFragment"
+        android:label="biometrics_approving_fragment"
+        tools:layout="@layout/biometrics_approving_fragment"/>
+</navigation>
